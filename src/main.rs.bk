@@ -1,0 +1,26 @@
+#[macro_use]
+extern crate lazy_static;
+extern crate ncurses;
+extern crate yaml_rust;
+
+mod letters;
+mod term;
+mod parser;
+
+use ncurses::*;
+use term::*;
+use parser::load_config;
+
+fn main()
+{
+    load_config();
+
+    // let mut canvas = Canvas::new();
+    // canvas.initialize();
+
+    // canvas.root.add_win(10, 10, 50, 10);
+    // let text = "hello".to_string();
+    // canvas.root.children[0].print_big(&text, 3, 3, COLOR_BLACK_WHITE);
+
+    // getch();
+}
