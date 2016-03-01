@@ -77,9 +77,9 @@ impl Window {
         werase(self._win);
         match self.content {
             Content::Empty => (),
-            Content::Text(_) => self.print(&content, 1, 1, *CPAIRS.get("WHITE_ON_BLACK").unwrap()),
+            Content::Text(_) => self.print(&content, 1, 1, *CPAIRS.get("BLUE_ON_BLACK").unwrap()),
             Content::BigText(_) => {
-                self.print_big(&content, 2, 1, *CPAIRS.get("BLACK_ON_WHITE").unwrap())
+                self.print_big(&content, 2, 1, *CPAIRS.get("BLUE_ON_BLACK").unwrap())
             }
         };
         box_(self._win, self.border_h, self.border_v);
