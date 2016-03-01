@@ -2,6 +2,10 @@
 
 A small ncurses terminal HUD.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/millerjs/huddle-rs/master/resources/screen1.png" alt="Current appearance"/>
+</p>
+
 ## Installation
 
 ```bash
@@ -13,10 +17,10 @@ $ cargo build
 ## Usage
 
 ```bash
-$ cargo run
+$ cargo run config.json
 ```
 
-Example json config file:
+Example `config.json` file:
 ```JSON
 {
     "delay": 1000,
